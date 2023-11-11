@@ -26,18 +26,14 @@ let weather = {
 };
 
 document.querySelector(".search button").addEventListener("click", function () {
+    document.querySelector(".weather").classList.remove("loading");
     weather.search();
 });
 
 document.querySelector(".search-bar").addEventListener("keyup", function (event) {
     if (event.key == "Enter") {
+        document.querySelector(".weather").classList.remove("hide");
         weather.search();
     }
 });
 
-
-const icon = document.querySelector(".icon");
-
-if (icon.src = "nada"){
-    icon.style.display = "none";
-};

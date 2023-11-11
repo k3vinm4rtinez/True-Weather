@@ -35,13 +35,17 @@ main {
     border-radius: 20px;
     width: 90%;
     max-width: 420px;
+    transition: 0.5s;
+}
+
+.hide {
+    display: none;
 }
 
 .search {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1em;
 }
 
 .search-bar {
@@ -92,4 +96,8 @@ main {
 .temp {
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+.city {
+    margin-top: 1rem;
 }
